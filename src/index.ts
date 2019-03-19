@@ -20,7 +20,7 @@ export default class TranformToReadStream extends Readable {
 		process.nextTick(() => {
 			let buffer = this.data;
 			if (!Buffer.isBuffer(buffer)) {
-				buffer = new Buffer(this.data, this.options.encoding);
+				buffer = Buffer.from(this.data, this.options.encoding);
 			}
 			this.push(buffer);
 			this.push(null);

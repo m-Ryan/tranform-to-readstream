@@ -5,12 +5,12 @@
 Install
 ---
 
-```
+```js
 npm install --save tranform-to-readstream
 
 ```
 
-```
+```js
 yarn add  tranform-to-readstream
 
 ```
@@ -19,20 +19,22 @@ Usage
 
 ---
 
-```
 
 string
 
-```javasctipr
+```js
+import TranformToReadStream from 'tranform-to-readstream';
+
 const readStream = new TranformToReadStream('hello word', { encoding: 'utf8'});
 
 ```
 
 or buffer 
 
-```javasctipr
+```js
 
 import axios from 'axios';
+import TranformToReadStream from 'tranform-to-readstream';
 
 
 const res = await axios({
@@ -40,8 +42,5 @@ const res = await axios({
     responseType: 'arraybuffer'
 })
 const readStream = new TranformToReadStream(res.data);
-
-```
-  
 
 ```
