@@ -1,0 +1,25 @@
+{
+  "name": "tranform-to-readstream",
+  "version": "0.0.1",
+  "description": "tranform-to-readstream",
+  "main": "dist/index.js",
+  "author": "mRyan",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^3.3.3333"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:m-Ryan/tranform-to-readstream.git"
+  },
+  "keywords": [
+    "stream",
+    "tranform",
+    "readstream",
+    "string",
+    "buffer"
+  ]
+}
